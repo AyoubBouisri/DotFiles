@@ -52,6 +52,9 @@ nnoremap <leader>ps :Rg<SPACE>
 nnoremap <silent><leader>+ :vertical resize +5<CR>
 nnoremap <silent><leader>- :vertical resize -5<CR>
 
+map <s-j> :set paste<CR>m`o<Esc> ``:set nopaste<CR>
+map <s-k> :set paste<CR>m`O<Esc> ``:set nopaste<CR>
+
 nnoremap <silent> <leader>gd :YcmCompleter GoTo<CR>
 nnoremap <silent> <leader>gf :YcmCompleter FixIt<CR>
 
