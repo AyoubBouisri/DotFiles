@@ -12,13 +12,13 @@ set smartcase
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
-set undofile
+set noundofile
 set incsearch
+set scrolloff=15
 
 call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe'
 Plug 'morhetz/gruvbox'
-Plug 'jremmen/vim-ripgrep'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sbdchd/neoformat'
 Plug 'mbbill/undotree'
@@ -30,6 +30,7 @@ call plug#end()
 
 colorscheme gruvbox
 set background=dark
+hi Normal guibg=NONE ctermbg=NONE
 
 if executable('rg')
     let g:rg_derive_root='true'
